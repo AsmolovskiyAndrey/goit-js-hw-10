@@ -22,18 +22,18 @@ function getName(event) {
 function createdPages(data) {
     let len = data.length;
 
-    if (len > 10) {
-        Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
-        return
-        }
     if (len >= 2 && len <= 10) {
         createFromTwoToTenPages(data)
         return
         }
-    if (len = 1) {
+    if (len === 1) {
         createOnePage(data)
         return
     }
+    if (len > 10) {
+        Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
+        return
+        }
 }
 function empty() {
     Notiflix.Notify.failure('Oops, there is no country with that name');
