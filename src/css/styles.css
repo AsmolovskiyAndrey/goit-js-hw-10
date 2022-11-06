@@ -18,3 +18,20 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+/* my styles */
+.js-country_name{
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.country_properties{
+  font-size: 18px;
+  font-weight: 500;
+}
+.country_img{
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
