@@ -58,7 +58,7 @@ function createOnePage(data) {
 function createFromTwoToTenPages(data) {
     let markup = data.map(countries => `
                 <div class="country-info">
-                    <span class="js-country_name">
+                    <span class="js-country_name small">
                         <img class="country_img" src="${countries.flags.png}" alt="${countries.name.common}">
                         ${countries.name.official }
                     </span>
